@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        td{
+            padding: 1rem 3rem;
+            text-align: center;
+        }
+        .LUNCHBREAK-rotate{
+            display: inline-block;
+            transform: rotate(-90deg);
+        }
+
+        .library{
+            background-color: lightsalmon;
+        }
+
+        .right-shift {
+            text-align: end;
+        }
+
+        .left{
+            text-align: start;
+        }
+        .head {
+            background-color: rgb(56, 250, 56);
+        }
+        .middle{
+            background-color: rgb(246, 168, 168);
+        }
+        .end{
+            background-color: lightblue;
+        }
+
+        td,table{
+            border: 1px solid black;
+            border-spacing: 0;
+        }
+        .highlight-content {
+            color: red;
+        }
+        .left-border-inmiddle{
+            border-left: 0;
+        }
+        .right-border-inmiddle{
+            border-right: 0;
+        }
+
+        a{
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <h2>Time Table</h2>
+    <table border="0">
+        <tr class="head">
+            <td class="left right-border-inmiddle" colspan="2">Branch: CSE</td>
+            <td class="right-border-inmiddle left-border-inmiddle" colspan="2">Section: B3</td>
+            <td class="right-border-inmiddle left-border-inmiddle" colspan="2">Room NO.-D-306</td>
+            <td class="right-shift right-border-inmiddle left-border-inmiddle" colspan="2">W.E.F 18/09/2023</td>
+        </tr>
+        <tr class="middle">
+            <td class="left right-border-inmiddle" colspan="4">Class Facilatator: Mr. Ranjeet Pathak</td>
+            <td class="right-shift left-border-inmiddle" colspan="4">Mobile No.-9721784240</td>
+        </tr>
+        <tr class="end">
+            <td>Day/Time</td>
+            <td>09:00-10:00<br/>AM<br/>1<sup>st</sup> Period</td>
+            <td>10:00-11:00<br/>AM<br/>2<sup>st</sup> Period</td>
+            <td>11:00-12:00<br/>AM<br/>3<sup>st</sup> Period</td>
+            <td>12:00-01:00<br/>PM<br/>4<sup>st</sup> Period</td>
+            <td>01:00-02:00<br/>PM<br/>5<sup>st</sup> Period</td>
+            <td>02:00-03:00<br/>PM<br/>6<sup>st</sup> Period</td>
+            <td>03:00-04:00<br/>PM<br/>7<sup>st</sup> Period</td>
+        </tr>
+        <tr>
+            <td class="end">Mon</td>
+            <td>CO</td>
+            <td>Maths</td>
+            <td>Discrete</td>
+            <td rowspan="6"><span class="LUNCHBREAK-rotate">LUNCHBREAK</span></td>
+            <td>CS</td>
+            <td colspan="2">DS LAb<br/><span class="highlight-content">[Lab-1]</span></td>
+        </tr>
+        <tr>
+            <td class="end">Tue</td>
+            <td>DS</td>
+            <td colspan="2">CO Lab <br/><span class="highlight-content">[Lab-4/Lab-5]</span></td>
+            <td>English</td>
+            <td>CO</td>
+            <td>Discrete</td>
+        </tr>
+        <tr>
+            <td class="end">Wed</td>
+            <td>DS</td>
+            <td colspan="2">WD Workshop Lab <br/><span class="highlight-content">[Lab-9]</span></td>
+            <td>CS</td>
+            <td>Maths</td>
+            <td>LR</td>
+        </tr>
+        <tr>
+            <td class="end">Thu</td>
+            <td>DS</td>
+            <td>CO</td>
+            <td>Maths</td>
+            <td>Discrete</td>
+            <td>HV</td>
+            <td>PSD</td>
+        </tr>
+        <tr>
+            <td class="end">Fri</td>
+            <td>CO</td>
+            <td>Discrete</td>
+            <td>DS</td>
+            <td>Maths</td>
+            <td>PSD</td>
+            <td>HV</td>
+        </tr>
+        <tr>
+            <td class="end">Sat</td>
+            <td>Maths</td>
+            <td>DS</td>
+            <td>CO</td>
+            <td>Discrete</td>
+            <td class="library">Library</td>
+            <td class="highlight-content">Quants</td>
+        </tr>
+    </table>
+
+    <a href="./img_text.html">Move to image page</a>
+</body>
+</html>
